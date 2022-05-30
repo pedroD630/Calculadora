@@ -1,3 +1,5 @@
+<!--completo-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,34 +11,30 @@
     <title>Calculadora</title>
 </head>
 <body>
-
-        <div class="calculadora" id="calculadora">
-            <h2 id="titulo"> Calculadora FUNEC </h2>
-            <br>
-
-            <div class="exibe_digito"></div>
-
-            <div class="teclado">
-
-                <div class="num">0</div>
-                <div class="num">1</div>
-                <div class="num">2</div>
-                <div class="num">3</div>  
-                <div class="num">4</div>
-                <div class="num">5</div>
-                <div class="num">6</div>  
-                <div class="num">7</div>
-                <div class="num">8</div>
-                <div class="num">9</div>  
-                
-                <div class="operacoes">
-                    <div class="soma"> + </div>
-                    <div class="sub"> - </div>
-                    <div class="multi"> * </div>
-                    <div class="div"> / </div>
-                    <div class="exibir_resultado"> = </div>
-                </div>
-            </div>
+    <div class="calculadora">
+        <div class="calculadora-exibir">0</div>
+        <div class="calculadora-teclas"> 
+            <!--Novos conceitos-->
+            <!--Os data-*atributos são usados ​​para armazenar dados personalizados privados para a página ou aplicativo.-->
+            <!--Os data-*atributos nos dão a capacidade de incorporar atributos de dados personalizados em todos os elementos HTML.-->
+            <button class="tecla-operador" data-action="add"> + </button>
+            <button class="tecla-operador" data-action="subtract"> - </button>
+            <button class="tecla-operador" data-action="multiply"> &times; </button>
+            <button class="tecla-operador" data-action="divide"> / </button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clar">AC</button>
+            <button class="tecla---igual" data-action="calculate"> = </button>
         </div>
+    </div>
 </body>
 </html>
