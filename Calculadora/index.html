@@ -1,40 +1,44 @@
-<!--completo-->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script/script.js"></script>
-    <title>Calculadora</title>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculator Part 1 completed</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script/script.js"></script>
+
 </head>
 <body>
-    <div class="calculadora">
-        <div class="calculadora-exibir">0</div>
-        <div class="calculadora-teclas"> 
-            <!--Novos conceitos-->
-            <!--Os data-*atributos são usados ​​para armazenar dados personalizados privados para a página ou aplicativo.-->
-            <!--Os data-*atributos nos dão a capacidade de incorporar atributos de dados personalizados em todos os elementos HTML.-->
-            <button class="tecla-operador" data-action="add"> + </button>
-            <button class="tecla-operador" data-action="subtract"> - </button>
-            <button class="tecla-operador" data-action="multiply"> &times; </button>
-            <button class="tecla-operador" data-action="divide"> / </button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>0</button>
-            <button data-action="decimal">.</button>
-            <button data-action="clar">AC</button>
-            <button class="tecla---igual" data-action="calculate"> = </button>
-        </div>
+
+<div class="container">
+    <p>
+      Calculadora FUNEC
+    </p>
+    <div class="calculator">
+      <div class="calculator__display">0</div>
+
+      <div class="calculator__keys">
+        <button class="key--operator" onclick="insert('+')" value="+" data-action="add">+</button>
+        <button class="key--operator" onclick="insert('-')" value="-" data-action="subtract">-</button>
+        <button class="key--operator" onclick="insert('*')" value="*" data-action="multiply">&times;</button>
+        <button class="key--operator" onclick="insert('/')" value="/" data-action="divide">÷</button>
+        <button onclick="insert(7)" value="7">7</button>
+        <button onclick="insert(8)" value="1">8</button>
+        <button onclick="insert(9)" value="9">9</button>
+        <button onclick="insert(4)" value="8">4</button>
+        <button onclick="insert(5)" value="7">5</button>
+        <button onclick="insert(6)" value="6">6</button>
+        <button onclick="insert(1)" value="1" >1</button>
+        <button onclick="insert(2)" value="2">2</button>
+        <button onclick="insert(3)" value="3">3</button>
+        <button onclick="insert(0)" value="0">0</button>
+        <button data-action="decimal">.</button>
+        <button onclick='c()' value="C" data-action="clear">AC</button>
+        <button onclick='equal()' value="=" class="key--equal" data-action="calculate">=</button>
+      </div>
     </div>
+  </div>
+
+
 </body>
 </html>
+
