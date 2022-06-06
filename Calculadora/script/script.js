@@ -1,24 +1,20 @@
-//incompleto
-//document.querySelector: Retorna o primeiro elemento dentro do documento que corresponde a class especificado.
-const calculadora = document.querySelector('.calculadora');
+// NOTE: 
+// This is the final source code file for a blog post "How to build a calculator". You can follow the lesson at https://zellwk.com/blog/calculator-part-1
 
-const teclas = document.querySelector('.calculadora-teclas');
+const lculateulate = (n1, operator, n2) => {
+  let result = ''
+  if (operator === 'add') {
+    result = parseFloat(n1) + parseFloat(n2)
+  } else if (operator === 'subtract') {
+    result = parseFloat(n1) - parseFloat(n2)
+  } else if (operator === 'multiply') {
+    result = parseFloat(n1) * parseFloat(n2)
+  } else if (operator === 'divide') {
+    result = parseFloat(n1) / parseFloat(n2)
+  }
 
-teclas.addEventListener('click', e => {
-    if (e.target.matches('button')){
-        const tecla = e.target;
-        const action = key.dataset.action;
+  return result
+}
 
-        if (!action) {
-            console.log('tecla de numero');
-        }
-        if (
-            action === 'add' || 
-            action === 'subtract' ||
-            action === 'multiply' ||
-            action === 'divide'
-        ) {
-            console.log('tecla de operador')
-        }
-    }
-})
+const calculator = document.querySelector('.calculator')
+const display = calculator.querySelector('.calculator__display')
