@@ -1,5 +1,5 @@
 # Calculadora
-  Calculadora orientada pelo professor Messias nas aulas de Programacao Web. <br>
+  Calculadora pras aulas de Programacao Web. <br>
   Algumas partes do codigo busquei em tutoriais: 
   ### .push 
   https://www.w3schools.com/jsref/jsref_push.asp 
